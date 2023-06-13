@@ -9,7 +9,7 @@ const works = () => {
     }}
   return (
     <div style={mystyle.body}>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
         <h1>
           work in progress 😉
           </h1>

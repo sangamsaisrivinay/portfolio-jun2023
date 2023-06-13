@@ -8,7 +8,7 @@ const mystyle={
     body: {
       
       background: 'linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)',
-        height:'100vh',
+       minHeight:'47vh',
        
     }
 }
@@ -70,17 +70,18 @@ const Banner = () => {
   },[])
   return (
     <div style={mystyle.body}>
-        <Navbar/>
+     <br /><br />
         <Particles init={particlesInit} options={options}/>
         <div className="display-1 container">
          
-          <h1>Hi there,</h1>
+          <div>Hi there,</div>
           <h2> I am Sangam Sai Sri Vinay Reddy</h2>
           <span style={{color:'black',fontWeight: 'bold',fontFamily:"'Poppins', sans-serif"}}>{text}</span>
           <Cursor/>
 
           
         </div>
+        <br /><br />
     </div>
   )
 }

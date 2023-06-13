@@ -58,15 +58,20 @@ const trainings = () => {
       'Programming for Everybody (Getting Started with Python)',],
       microsoft:['Introduction to Python: Absolute Beginner','AZ-900: Microsoft Azure Fundamentals'],
       NPTEL:['Blockchain and its Applications'],
-    }
+    },
+    trainings:[
+      'salesforce developer - salesforce',
+      'MERN STACK - cuvette tech'
+    ]
     
   }
 
 
   return (
     <div style={mystyle.body}>
-        <Navbar></Navbar>
         <div className="container">
+          <h1 className="display-1">Trainings & Certifications</h1>
+          <br />
                     {/* certifications */}
           <div style={mystyle.card}>
             <div style={mystyle.card.header}>
@@ -103,6 +108,19 @@ const trainings = () => {
                   </div>
               ))} 
 
+            </div>
+          </div>
+                    {/* trainings */}
+            <div style={mystyle.card}>
+            <div style={mystyle.card.header}>
+              <span>Trainings</span>
+            </div>
+            <div>
+              {data.trainings.map((course, index) => (
+                <div style={mystyle.card.element} key={index}>
+                  <span>{course}</span>
+                  </div>
+              ))}
             </div>
           </div>
                     {/* courses */}

@@ -31,15 +31,15 @@ const about = () => {
   }
   return (
     <div style={mystyle.body}>
-        <Navbar></Navbar>
-        <div className="container" >
+      <div className="container">
+        <h1 className="display-1">About Me</h1><br />
+          <div  style={mystyle.para}>
         <img src={Photo} style={mystyle.photo} class=" mx-auto d-block rounded-circle" alt="face not loaded"/>
-        </div>
-          <div className="container" style={mystyle.para}>
            I am an aspiring software engineer with a passion for cutting-edge technologies such as blockchain, web development, and artificial intelligence. As a fresher in the industry, I bring a fresh perspective and a hunger to learn and grow. I am fascinated by the potential of blockchain to revolutionize various sectors and enhance data security. In addition, I enjoy creating engaging and user-friendly web applications that provide seamless experiences. Exploring the depths of artificial intelligence excites me, as it presents limitless possibilities for innovation. I am eager to contribute my skills, adaptability, and problem-solving abilities to the field of software engineering. Join me on this journey as we shape the future through technology!
        </div>
        <br /><br /><br />
         </div>
+      </div>
   )
 }
 

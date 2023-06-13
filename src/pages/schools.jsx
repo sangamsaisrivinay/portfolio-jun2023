@@ -41,7 +41,7 @@ const schools = () => {
 
   const details={
     btech:{
-      name:'Vasireddy Venkatadri Institute of Technology',
+      name:'Vasireddy Venkatadri Institute of Technology (autonomous)',
       year:'2019-2023',
       course:'B.Tech',
       branch:'Computer Science and Engineering',
@@ -67,8 +67,9 @@ const schools = () => {
 
   return (
     <div style={mystyle.body}>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
         <div className="container">
+      <h1 className='display-1'>Qualifications</h1><br />
           <div style={mystyle.school}>
             <div style={mystyle.school.lineOne}>
               <span style={mystyle.school.name}>{details.btech.name}</span>

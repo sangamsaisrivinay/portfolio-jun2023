@@ -39,8 +39,10 @@ const social = () => {
 
   return (
     <div style={mystyle.body}>
-        <Navbar></Navbar>
-        <div className="container" style={mystyle.card_cont}>
+        {/* <Navbar></Navbar> */}
+        <div className="container">
+        <h1 className='display-1'>Connect with Me</h1><br />
+        <div  style={mystyle.card_cont}>
           {data.map((item, index) => (
           <a key={index} href={item.link}>
             <div style={mystyle.card} >  
@@ -49,6 +51,7 @@ const social = () => {
             </div>
           </a>
         ))}
+        </div>
         </div>
         <br /><br /><br />
         </div>
